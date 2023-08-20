@@ -1,0 +1,62 @@
+.container {
+  padding: 16px 16px 32px 16px;
+  position: fixed;
+  inset: 0;
+  background-color: #fff;
+  z-index: 2;
+  transform: translateX(-100%);
+  transition: transform 0.5s linear;
+}
+.container.mobileMenuOpen {
+  transform: translateX(0);
+}
+.wrapperHeader {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 48px;
+}
+.close {
+  margin-right: 20px;
+}
+.logo {
+  width: 159px;
+  height: 39px;
+  flex-grow: 1;
+  background-image: url("../../assets/Your.logo.png");
+  background-repeat: no-repeat;
+}
+
+.wrapperText {
+  display: flex;
+  padding-left: 4px;
+}
+.text {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: var(--color-interaction);
+  border-bottom-width: 2px;
+  border-bottom-style: dashed;
+  border-bottom-color: var(--color-interaction);
+}
+.text:not(:last-child) {
+  margin-right: 32px;
+}
+.socialList {
+  position: absolute;
+  bottom: 32px;
+  left: 20px;
+  display: flex;
+}
+.socialItem {
+  scale: 1;
+  transition: scale 0.5s ease-out;
+}
+.socialItem:hover {
+  scale: 1.2;
+}
+.socialItem:not(:last-child) {
+  margin-right: 16px;
+}
