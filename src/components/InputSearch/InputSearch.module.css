@@ -1,0 +1,119 @@
+.form {
+  width: calc(100% - 10px);
+  max-width: 325px;
+  /* bottom: 26px;
+  left: 50%; */
+  /* transform: translateX(-50%); */
+  /* position: absolute; */
+  @media (width >= 768px) {
+    max-width: 570px;
+    /* bottom: -32px; */
+  }
+}
+.place {
+  position: absolute;
+  top: 23px;
+  left: 18px;
+  width: 22px;
+  height: 22px;
+  background-image: url("../../assets/place.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: center;
+}
+.input {
+  width: 100%;
+  height: 70px;
+  border-radius: 36px;
+  border: 1px solid #d6d6d6;
+  background: var(--color-white, #fff);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
+}
+.whereText {
+  position: absolute;
+  display: block;
+  top: 14px;
+  left: 47px;
+  @media (width >= 768px) {
+    position: absolute;
+    display: block;
+    top: 14px;
+    left: 47px;
+    color: var(--color-main-text);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+}
+.inputText {
+  position: absolute;
+  top: 31px;
+  left: 48px;
+  color: #a3a3a3;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.search {
+  position: absolute;
+  top: 14px;
+  right: 17px;
+  width: 40px;
+  height: 40px;
+  background-image: url("../../assets/search.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: center;
+}
+.line {
+  display: none;
+  @media (width >= 768px) {
+    position: absolute;
+    display: block;
+    bottom: 15px;
+    right: 50%;
+  }
+}
+.calendar {
+  display: none;
+  @media (width >= 768px) {
+    position: absolute;
+    display: block;
+    bottom: 24px;
+    right: 43%;
+  }
+}
+.whenText {
+  display: none;
+  @media (width >= 768px) {
+    position: absolute;
+    display: block;
+    bottom: 32px;
+    right: 182px;
+    color: var(--color-main-text);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+}
+.selectText {
+  display: none;
+  @media (width >= 768px) {
+    position: absolute;
+    display: block;
+    top: 31px;
+    right: 140px;
+    color: #a3a3a3;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
