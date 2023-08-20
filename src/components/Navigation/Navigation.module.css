@@ -1,0 +1,32 @@
+.wrapperNavLink {
+  display: flex;
+  flex-direction: column;
+  padding-left: 4px;
+  margin-bottom: 40px;
+  @media (768px <= width) {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+    margin-bottom: 0;
+  }
+}
+.link {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #1a1a1a;
+}
+.link:not(:last-child) {
+  margin-bottom: 32px;
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+.link:hover,
+.link:focus {
+  color: var(--color-interaction);
+}
